@@ -52,7 +52,7 @@ fn day_01(content: &String) {
 }
 
 fn day_02(content: &String) {
-    let mut powers: Vec<u32> = vec![];
+    let mut res: u32 = 0;
 
     for line in content.lines() {
         let mut splitted = line.split(" ");
@@ -75,12 +75,10 @@ fn day_02(content: &String) {
                 let greens = greens.iter().max().unwrap();
                 let blues = blues.iter().max().unwrap();
 
-                powers.push(reds * greens * blues);
+                res += reds * greens * blues;
             }
         }
     }
-
-    let res: u32 = powers.iter().sum();
 
     println!("{}", res);
 }
