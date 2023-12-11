@@ -2,8 +2,9 @@
 name = "aoc_2023"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/JustCris654/AdventOfCode.git"
+authors = ["Cristian Scapin <cristian.scapin654@icloud.com>"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [[bin]]
 name = "01"
 path = "src/01_trebuchet.rs"
@@ -11,5 +12,9 @@ path = "src/01_trebuchet.rs"
 [[bin]]
 name = "02"
 path = "src/02_cubes.rs"
+
+[[bin]]
+name = "03"
+path = "src/03_ratios.rs"
 
 [dependencies]
